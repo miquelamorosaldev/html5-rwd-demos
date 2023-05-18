@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Boostrap -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <title>Activitat 15 - Form inicial.</title>
+    </head>
+    <body>
+        <h1>Activitat 15 - Form inicial.</h1>
+        <div class="container">
+            <form method='post' action="">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="username">(*) Username: </label>
+                        <input type="text" class="form-control" id="username" name="username" required />
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">(*) Email Address:</label> 
+                        <input type="email" class="form-control" name="email" id="email" required />
+                    </div>  
+                    <div class="form-group col-md-6">
+                        <label for="password">Password: </label>
+                        <input type="password" class="form-control" name="password" id="password">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="comments"> Comments: </label>
+                        <textarea name="comments" class="form-control" id="comments"></textarea>
+                    </div>  
+                    <div class="form-group col-md-6">
+                        <label for="emailformat"> Email format: </label>
+                        <input type="radio" name="emailformat" value="Plain Text" checked>
+                        Plain Text </input>
+                        <input type="radio" name="emailformat" value="HTML">
+                        HTML</input>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="occupation"> Occupation:</label>
+                        <select name="occupation" id="occupation" class="custom-select">
+                            <option value="webdeveloper">Web Developer</option>
+                            <option value="dbadministrator">Database Administrator</option>
+                        </select>
+                    </div>  
+                    <div class="form-group col-md-6">
+                        <label for="languages"> Other Languages: </label>
+                        <input type="checkbox" name="languages" value="php">PHP</input>
+                        <input type="checkbox" name="languages" value="jsp">JSP</input>
+                        <input type="checkbox" name="languages" value="asp">ASP</input>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="hidden" name="FormName" value="SimpleForm">
+                        <input type="submit" name="enviar" class="btn btn-primary" value="Enviar">
+                        <input type="reset" name="Reset" class="btn btn-warning" value="Reset">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
+
+
